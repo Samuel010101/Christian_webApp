@@ -36,6 +36,15 @@ const items = [
             'Efesios 2: 8'
         ]
     },
+    {
+        title: 'El perdon',
+        description: 'El perdonar es parte y efecto de la salvación que hemos recibido por medio de jesucristo y asi como hemos sido perdonado Dios nos demanda que perdonemos a los que nos ofenden',
+        content: [
+            'Proverbios 17: 9',
+            'Efesios 4: 32',
+            'Colosenses 3: 13'
+        ]
+    }
 ]
 
 

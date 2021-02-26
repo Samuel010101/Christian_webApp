@@ -9,7 +9,7 @@ const Inicio = () => {
     {
       render: () => {
         return (
-          <Image className="slider" src="../img/corazon.jpeg" alt="Imagen 1" />
+          <Image className="slider" src={require("../img/gota.png" )} alt="Imagen 1" />
         );
       }
     },
