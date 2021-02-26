@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "semantic-ui-carousel-react";
-import { Image, Button } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 //import "semantic-ui-css/semantic.min.css";
 
 
