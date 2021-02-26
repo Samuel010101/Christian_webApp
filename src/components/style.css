@@ -1,0 +1,97 @@
+
+
+.ui.secondary.pointing.menu {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    border-bottom: none;
+   
+}
+.ui.secondary.pointing.menu > div{
+ width: 60%;
+ display: flex;
+ justify-content: center;
+
+}
+
+.ui.secondary.pointing.menu .item {
+    font-size: 18px !important;
+    margin-bottom: 40px;
+    margin-top: 15px;
+   
+     
+}
+
+.ui.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ui.form .field {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ui.form .field>label {
+    font-size: 18px !important;
+    width: 60%;
+
+}
+
+/* .ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url]{
+    margin-left: 20px;
+    margin-left: 27%;
+    
+} */
+
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url], .ui.form textarea {
+    width: 60%;
+    font-size: 17px;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.ui.vertical.segment {
+    /* margin-left: 450px; */
+    border-bottom: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ui.vertical.segment > *{
+    width: 70%;
+}
+
+.ui.fluid.card {
+   /* margin-left: 170px; */
+    width: 80% !important;
+}
+
+div.sliderFather .slider {
+    width: 100% !important;
+    height: 500px !important;
+}
+
+.parrafo{
+    white-space: pre-wrap;
+    font-size: 20px;
+}
+
+div.sliderFather > div{
+    display: flex;
+    justify-content: center;
+}
+
+
+
