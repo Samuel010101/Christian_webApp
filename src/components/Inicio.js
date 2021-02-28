@@ -1,12 +1,15 @@
 import React from "react";
+//import Carousel from "semantic-ui-carousel-react";
+//import { Image } from "semantic-ui-react";
+//import "semantic-ui-css/semantic.min.css";
+
+
 import gota from '../img/gota.png';
 import corazon from '../img/corazon.jpeg';
 import download from '../img/download.jpeg';
 import imagen1 from '../img/imagen_1.jpeg';
 import imagen2 from '../img/imagen_2.jpeg';
-//import Carousel from "semantic-ui-carousel-react";
-//import { Image } from "semantic-ui-react";
-//import "semantic-ui-css/semantic.min.css";
+
 
 
 const Inicio = () => {
