@@ -1,57 +1,55 @@
 import React from "react";
-//import Carousel from "semantic-ui-carousel-react";
-//import { Image } from "semantic-ui-react";
+import Carousel from "semantic-ui-carousel-react";
+import { Image } from "semantic-ui-react";
 //import "semantic-ui-css/semantic.min.css";
 
-
-import gota from '../img/gota.png';
 import corazon from '../img/corazon.jpeg';
-import download from '../img/download.jpeg';
+import biblia from '../img/download.jpeg';
+import gota from '../img/gota.png';
 import imagen1 from '../img/imagen_1.jpeg';
 import imagen2 from '../img/imagen_2.jpeg';
 
 
-
 const Inicio = () => {
-
-  return (
-    <div>
-      <ul>
-        <li><img  src={gota} alt="gota" ></img> </li>
-        <li><img src={corazon} alt="corazon"></img> </li>
-        <li><img src={download} alt="Biblia" ></img> </li>
-        <li><img src={imagen1} alt="Actividad de jovenes" ></img> </li>
-        <li><img src={imagen2} alt="Tiempo de afilamiento" ></img> </li>
-      </ul>
-    </div>
-  )
-
-  /*
   let elements = [
     {
       render: () => {
         return (
-          <Image className="slider" src={require("../img/gota.png" )} alt="Imagen 1" />
+          <Image className="slider" src={corazon} alt="Imagen 1" />
         );
       }
     },
     {
       render: () => {
         return (
-        <Image className="slider" src="https://images.squarespace-cdn.com/content/v1/5601a9b4e4b068aeb0c6987f/1560242335592-MYDHS51TAGL2LFGR96T5/ke17ZwdGBToddI8pDm48kDVYnQx84rzrm2qQOUd7Sy17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UY8mqlSYPG-nmIUWpJc006SuQyuTTLGA4klG9-z6Yewc3-7Z7Bn97rMKff5yJsS8Lw/Espiritu-santo-fuente-de-amor1.jpg?format=2500w" />
+        <Image className="slider" src={biblia} alt="Biblia" />
         );
       }
     },
     {
       render: () => {
         return (
-          <Image className="slider" src="https://farm5.staticflickr.com/4602/39059201754_43650e3491_z.jpg" />
+          <Image className="slider" src={gota} alt="Gota" />
+        );
+      }
+    },
+    {
+      render: () => {
+        return (
+          <Image className="slider" src={imagen1} alt="Culto de jovenes" />
+        );
+      }
+    },
+    {
+      render: () => {
+        return (
+          <Image className="slider" src={imagen2} alt="Tiempo de afilamiento" />
         );
       }
     }
   ];
   return (
-    <div   >
+    <div  /*style={{ width: 500}}*/ >
       <Carousel
         elements={elements}
         duration={10000}
@@ -61,12 +59,8 @@ const Inicio = () => {
       />
     </div>
   );
-*/
-
-
 };
 export default Inicio;
-
 
 
 
