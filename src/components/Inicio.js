@@ -1,10 +1,29 @@
 import React from "react";
-import Carousel from "semantic-ui-carousel-react";
-import { Image } from "semantic-ui-react";
+import gota from '../img/gota.png';
+import corazon from '../img/corazon.jpeg';
+import download from '../img/download.jpeg';
+import imagen1 from '../img/imagen_1.jpeg';
+import imagen2 from '../img/imagen_2.jpeg';
+//import Carousel from "semantic-ui-carousel-react";
+//import { Image } from "semantic-ui-react";
 //import "semantic-ui-css/semantic.min.css";
 
 
 const Inicio = () => {
+
+  return (
+    <div>
+      <ul>
+        <li><img  src={gota} alt="gota" ></img> </li>
+        <li><img src={corazon} alt="corazon"></img> </li>
+        <li><img src={download} alt="Biblia" ></img> </li>
+        <li><img src={imagen1} alt="Actividad de jovenes" ></img> </li>
+        <li><img src={imagen2} alt="Tiempo de afilamiento" ></img> </li>
+      </ul>
+    </div>
+  )
+
+  /*
   let elements = [
     {
       render: () => {
@@ -29,7 +48,7 @@ const Inicio = () => {
     }
   ];
   return (
-    <div  /*style={{ width: 500}}*/ >
+    <div   >
       <Carousel
         elements={elements}
         duration={10000}
@@ -39,6 +58,9 @@ const Inicio = () => {
       />
     </div>
   );
+*/
+
+
 };
 export default Inicio;
 
@@ -46,86 +68,4 @@ export default Inicio;
 
 
 
-/*
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-const items = [
-  {
-    src: require('../img/corazon.jpeg'),
-    altText: 'imagen 1',
-    caption: 'imagen de un corazon'
-  },
-  {
-    src: require('../img/gota.png'),
-    altText: 'imagen 2',
-    caption: 'imagen de una gota'
-  },
-  {
-    src: require('../img/download.jpeg'),
-    altText: 'imagen 3',
-    caption: 'Biblia'
-  }
-];
-
-const Inicio = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item, index) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={index}
-      >
-        <img   src={item.src} alt={item.altText}  width="100%" height="500px" />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
-
-  return (
-    <div>
-      <h2>Inicio</h2>
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>
-    </div>
-  );
-}
-
-export default Inicio;
-*/

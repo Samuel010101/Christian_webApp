@@ -78,19 +78,51 @@
     width: 60% !important;
 }
 
+/*
 div.sliderFather .slider {
     width: 100% !important;
     height: 500px !important;
 }
+*/
 
 .parrafo{
     white-space: pre-wrap;
     font-size: 20px;
 }
 
+/*
 div.sliderFather > div{
     display: flex;
     justify-content: center;
+}
+*/
+
+
+/* slider basado en css */
+div.sliderFather  {
+    width: 95%;
+    margin: auto;
+    overflow: hidden !important;
+}
+
+div.sliderFather  ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+
+li {
+    width: 100%;
+   list-style: none;
+}
+
+div.sliderFather .slider > img {
+    width: 100%;
+}
+
+img {
+    width: 80%;
+    height: 50%;
 }
 
 
