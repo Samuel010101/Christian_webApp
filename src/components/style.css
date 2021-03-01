@@ -76,6 +76,7 @@
 .ui.fluid.card {
    /* margin-left: 170px; */
     width: 60% !important;
+   
 }
 
 div.sliderFather .slider {
@@ -92,5 +93,4 @@ div.sliderFather > div{
     display: flex;
     justify-content: center;
 }
-
 
