@@ -73,11 +73,13 @@
     width: 70%;
 }
 
+/* slider */
 .ui.fluid.card {
    /* margin-left: 170px; */
     width: 60% !important;
    
 }
+
 
 div.sliderFather .slider {
     width: 100% !important;

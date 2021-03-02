@@ -55,9 +55,7 @@ const App = () => {
             <Logo />
             <Header />
             <Route path="/">
-                <div className="sliderFather">
                     <Inicio />
-                </div>
             </Route>
             <Route path="/estudiosBiblicos">
                 <Estudios />
@@ -69,7 +67,9 @@ const App = () => {
                 <TemasBiblicos items={items} />
             </Route>
             <Route path="/iglesiaDeDios">
+                <div className="sliderFather">
                 <IglesiaDeDios />
+                </div>
             </Route>
         </div>
     );
