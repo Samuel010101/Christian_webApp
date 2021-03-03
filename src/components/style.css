@@ -96,3 +96,9 @@ div.sliderFather > div{
     justify-content: center;
 }
 
+.acordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}

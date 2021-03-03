@@ -64,7 +64,9 @@ const App = () => {
                 <Predicas />
             </Route>
             <Route path="/temasBiblicos">
+                <div className="acordion" >
                 <TemasBiblicos items={items} />
+                </div>
             </Route>
             <Route path="/iglesiaDeDios">
                 <div className="sliderFather">

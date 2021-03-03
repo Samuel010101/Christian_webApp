@@ -4,10 +4,8 @@ import './index.css';
 import { Layout, Menu } from 'antd';
 import {
   MenuUnfoldOutlined,
-  MenuFoldOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
+  MenuFoldOutlined
+ 
 } from '@ant-design/icons';
 
 const { Header, Sider, Content } = Layout;
@@ -27,14 +25,14 @@ const Inicio = () => {
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1" icon={<UserOutlined />}>
-              nav 1
+            <Menu.Item key="1">
+              Visión
             </Menu.Item>
-            <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-              nav 2
+            <Menu.Item key="2">
+              Misión
             </Menu.Item>
-            <Menu.Item key="3" icon={<UploadOutlined />}>
-              nav 3
+            <Menu.Item key="3">
+              Valores
             </Menu.Item>
           </Menu>
         </Sider>
