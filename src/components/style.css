@@ -96,9 +96,14 @@ div.sliderFather > div{
     justify-content: center;
 }
 
+/* Componente temas biblicos */
 .acordion {
     display: flex;
     flex-direction: column;
     align-items: center;
    
+}
+
+.ui.styled.accordion {
+    width: 900px;
 }
