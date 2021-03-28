@@ -15,9 +15,7 @@ const Inicio = () => {
     
 
   const toggle = () => {
-    setCollapsed({
-      collapsed: collapsed
-    });
+    setCollapsed(!collapsed)
   };
 
   
@@ -40,7 +38,7 @@ const Inicio = () => {
           <Header className="site-layout-background" style={{ padding: 0 }}>
             {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
               className: 'trigger',
-              onClick: collapsed.toggle,
+              onClick: toggle
             })}
           </Header>
           <Content
@@ -49,9 +47,10 @@ const Inicio = () => {
               margin: '24px 16px',
               padding: 24,
               minHeight: 280,
+            
             }}
           >
-            Content
+            <h2>Un mensaje a la conciencia</h2>
             <p>
               La iglesia de Dios ha sido ordenada de forma imperativa a llevar a cabo la gran comision
               del evangenlio de cristo
