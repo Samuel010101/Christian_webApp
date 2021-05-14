@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faBible, faHandHoldingMedical, faBookReader } from '@fortawesome/free-solid-svg-icons';
 import 'antd/dist/antd.css';
 import './index.css';
 import { Layout, Menu } from 'antd';
@@ -23,14 +25,17 @@ const Inicio = () => {
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1">
+            <Menu.Item key="1"> <FontAwesomeIcon icon={faEye}/>
               Visión
             </Menu.Item>
-            <Menu.Item key="2">
+            <Menu.Item key="2"> <FontAwesomeIcon  icon={faHandHoldingMedical} />
               Misión
             </Menu.Item>
-            <Menu.Item key="3">
+            <Menu.Item key="3"> <FontAwesomeIcon icon={faBible} />
               Valores
+            </Menu.Item>
+            <Menu.Item key="4"> <FontAwesomeIcon icon={faBookReader} />
+              Enseñanza
             </Menu.Item>
           </Menu>
         </Sider>
