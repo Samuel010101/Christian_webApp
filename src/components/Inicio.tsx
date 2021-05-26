@@ -9,23 +9,29 @@ import {
   MenuFoldOutlined
  
 } from '@ant-design/icons';
+import Vision from '../homeContent/Vision';
+import Mision from '../homeContent/Mision';
+import Value from '../homeContent/Value';
+import Enseñanza from '../homeContent/Enseñanza';
+
+
 
 const { Header, Sider, Content } = Layout;
 
-const Inicio = () => {
+const Inicio = (props) => {
     const [collapsed, setCollapsed] = useState(false);
-    
-
+   
+   
   const toggle = () => {
     setCollapsed(!collapsed)
   };
 
-  
+
     return (
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1"> <FontAwesomeIcon icon={faEye}/>
+            <Menu.Item key="1"> <FontAwesomeIcon icon={faEye}  />
               Visión
             </Menu.Item>
             <Menu.Item key="2"> <FontAwesomeIcon  icon={faHandHoldingMedical} />
@@ -48,18 +54,20 @@ const Inicio = () => {
           </Header>
           <Content
             className="site-layout-background"
-            style={{
-              margin: '24px 16px',
-              padding: 24,
-              minHeight: 280,
+            // style={{
+            //   margin: '24px 16px',
+            //   padding: 24,
+            //   minHeight: 280,
             
-            }}
+            // }}
           >
-            <h2>Un mensaje a la conciencia</h2>
-            <p>
-              La iglesia de Dios ha sido ordenada de forma imperativa a llevar a cabo la gran comision
-              del evangenlio de cristo
-            </p>
+              <Enseñanza />
+              <Vision />
+              <Mision />
+              <Value />
+
+             
+            
           </Content>
         </Layout>
       </Layout>

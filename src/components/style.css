@@ -84,5 +84,16 @@
 /* Componente inicio */
 
 /* Componente temas biblicos */
+[data-theme='compact'] p,
+p {
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* Componente iglesia de Dios */
